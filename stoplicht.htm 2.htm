@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	#rood, #oranje, #groen{
+		position: relative;
+		left: 45%;
+		height : 200px;
+		width : 200px;
+		background-color:black;
+		display: block;
+		margin: 10px;
+		border-radius: 250px;
+	} 
+
+</style>
+
+<body>
+	<h2>STOPLICHT</h2>
+	<div> <button id="start" onclick="start()">start</button>
+		<button id="stop" oneclick="stop()">stop</button>
+	<button input="button" id="rood" onclick="stoplicht('rood')">rood</button>
+<button input="button" id="oranje" onclick="stoplicht('oranje')">oranje</button>
+<button input="button" id="groen" onclick="stoplicht('groen')">groen</button>
+	</div>	
+	
+	<p id="demo"></p>
+
+<script>
+	function stoplicht(kleur) {	
+
+		if (go) {
+			kleur = kleurRij[teller];
+			teller++;
+			if (teller == kleurRij.length) {
+					teller = 0
+
+
+
+				}
+			}
+
+	if (kleur=="rood") {
+		document.getElementById("rood").style.backgroundColor="red";
+		document.getElementById("oranje").style.backgroundColor="lightgrey";
+		document.getElementById("groen").style.backgroundColor="lightgrey";
+		document.getElementById("demo").innerHTML="STOPPEN";
+		}
+		
+	if (kleur=="oranje") {
+		document.getElementById("rood").style.backgroundColor="lightgrey";
+		document.getElementById("oranje").style.backgroundColor="orange";
+		document.getElementById("groen").style.backgroundColor="lightgrey";
+		document.getElementById("demo").innerHTML="REMMEN";
+		}
+		
+	if (kleur=="groen") {
+		document.getElementById("rood").style.backgroundColor="lightgrey";
+		document.getElementById("oranje").style.backgroundColor="lightgrey";
+		document.getElementById("groen").style.backgroundColor="green";
+		document.getElementById("demo").innerHTML="DOORGAAN";
+
+
+
+		}
+	
+
+}
+
+
+	var go = false;
+	var kleurRij = ["rood", "groen", "oranje"];
+	var teller = 0;
+	var timer;
+	function start() {
+		go = true;
+		timer = setInterval("stoplicht('rood')", 3000);
+
+
+
+}
+
+	function stop() {
+		clearInterval(timer);
+		go = false;
+
+	}
+</script>
+ 
+</body>
+</html>
