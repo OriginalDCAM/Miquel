@@ -1,6 +1,6 @@
 ## Miquels repository
 
-Deze repository is geupdate door Denzel.
+Deze repository is nogeens geupdate door Denzel.
 
 # Auteurs:
 Miquel en Denzel
