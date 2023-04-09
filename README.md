@@ -1,6 +1,6 @@
-## Miquels en Denzels repository
+# Miquels en Denzels repository
 
 Deze repository is nogeens geupdate door Denzel.
 
-# Auteurs:
+## Auteurs:
 Miquel en Denzel
