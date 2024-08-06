@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="/Blade">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="Text" placeholder="Username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a Password:</label>
+            <input type="password" placeholder="Password" name="password">
+        </p>
+        <p>
+            <label for="color">Select a color:</label>
+            <input type="color" name="color">
+        </p>
+        <p>
+            <label for="range">Select a range:</label>
+            <input type="range" placeholder="range" name="range">
+        </p>
+        <p>
+            <label for="month">Choose a date:</label>
+            <input type="month" placeholder="Choose date" name="choose a date">
+        </p>
+        <label for="number">Pick a number:</label>
+        <input type="number" placeholder="Pick a number" name="Choose a number" id="">
+        </p>
+
+    </form>
+
+    <hr>
+
+    <button type="button">Attack!</button>
+
+    <input type="submit" value="yall niggaz">
+
+    <button>Not Inside Form</button>
+
+    <h1>Search</h1>
+    <h3>Search Reddit</h3>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search reddit</button>
+    </form>
+
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results?search">
+        <input type="=text" name="q">
+        <button>Youtube</button>
+    </form>
+
+    <h2>Inputs</h2>
+    <form action="/Annie">
+        <input type="checkbox" name="Great!" id="Agree" checked>
+        <label for="Agree">I agree!</label>
+
+        <button>submit</button>
+        <p>
+            <label for="xS">xS</label>
+            <input type="radio" name="Size" id="xs" value="xs">
+            <label for="M">M</label>
+            <input type="radio" name="Size" id="m" value="m">
+            <label for="L">L</label>
+            <input type="radio" name="Size" id="l" value="l">
+        </p>
+        <p>
+            <button> submit</button>
+        </p>
+
+        <p>
+            <label for="Please pick a generator"></label>
+        <h3>Dead By Daylight-Select Option:</3>
+            <p>
+                <select name="Dead By Daylight" id="Dead By Daylight">
+                    <option value="Flashlight">Flashlight</option>
+                    <option value="Toolbox">Toolbox</option>
+                    <option value="Key">Key</option>
+                    <option value="Fire cracker">Fire cracker</option>
+                    <option value="Add-on">Add-on</option>
+                </select>
+            </p>
+            <label for="Coconut Milk">Coconut</label>
+            <input type="range" id="Coconut Milk" min="1" max="10" name="Cococnut_Level">
+            <p>
+
+            <p>
+                <button>submit</button>
+            </p>
+
+
+
+            <label for="request">Any Special Request?</label>
+            <br>
+            <textarea id="request" rows="7" cols="40" placeholder="Type something here:"></textarea>
+            <br>
+            <hr>
+            <button>submit</button>
+
+            <!--Todays lesson-->
+
+            <h2>Validations Demo</h2>
+
+            <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+            <p>
+                <label for="username">username</label>
+                <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+            </p>
+
+            <button>submit</button>
+
+            <h1> Race Registration!</h1>
+
+            <div>
+
+                <label for="Annie">Annie</label>
+                <input type="text" id="Annie" name="Annie" required>
+
+                <label for="Leonhart"> Leonhart</label>
+                <input type="text" id="Leonhart" name="Leonhart" required>
+            </div>
+
+            <h3>Select Titan:</h3>
+
+            <div>
+                <p>
+                    <input type="radio" id="Female Titan" name="Attack Titan" value="Female Titan">
+
+                    <label for="Female Titan">Female Titan</label>
+                </p>
+                <p>
+                    <input type="radio" id="Beast Titan" name="Attack Titan" value="Beast Titan">
+
+                    <label for="Beast Titan">Beast Titan</label>
+                </p>
+                <p>
+                    <input type="radio" id="Attack Titan" name="Attack Titan" value="Attack Titan">
+
+                    <label for="Attack Titan">Attack Titan</label>
+                </p>
+            </div>
+
+            <div>
+                <label for="Email">Email</label>
+                <input type="email" id="Email" name="Email" required>
+
+                <label for="Password">Password</label>
+                <input type="password" id="Password" name="password" required>
+            </div>
+
+
+
+            <p>
+            <H3>Select your character:</h3>
+
+            <label for="Select">Select</label>
+
+            <select name="Annie" id="Annie">
+
+                <option value="Annie">Annie</option>
+                <option value="Jean">Jean</option>
+                <option value="Mikasa">Mikasa</option>
+                <option value="Armin">Armin</option>
+                <option value="Bertholdt">Bertholdt</option>
+                <option value="Reiner">Reiner</option>
+            </select>
+            </p>
+
+            <button>Regiser</button>
+    </form>
+</body>
